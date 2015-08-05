@@ -48,7 +48,7 @@ To use, simply reference the nuget package in each of your platform projects.
     UserDialogs.Init(() => (Activity)Forms.Context);
 
     // MvvmCross
-    UserDialogs.Init(() => Mvx.Resolve<IMvxAndroidCurrentTopActivity>.Activity);
+    UserDialogs.Init(() => Mvx.Resolve<IMvxAndroidCurrentTopActivity>().Activity);
 
     // Using your own activity provider (you need to manage what the top activity is)
     UserDialogs.Init(Activity Factory Function);
